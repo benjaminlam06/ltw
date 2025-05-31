@@ -8,16 +8,6 @@
 					include_once('quanlysinhvien/them.php');
 					include_once('quanlysinhvien/hoso.php');
 				break;
-			
-			case 'sua':
-				?><h4></h4><hr> <?php
-					include_once('quanlysinhvien/sua.php');
-				break;		
-			default:
-					
-				break;
 		}
 	}
-
-
 ?>

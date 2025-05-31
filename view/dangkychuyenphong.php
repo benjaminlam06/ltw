@@ -36,7 +36,7 @@ if (isset($_SESSION['sv_login'])) {
                             <label for="inputAddress">Chọn số người ở trong 1 phòng :</label>
                             <div class="custom-control custom-checkbox" style="margin-left: 30px;">
                                 <input type="radio" class="custom-control-input" id="customCheck1" value="4" name="sno" checked>
-                                <label class="custom-control-label" for="customCheck1"><h5> Phòng 4 Người</h5></label>
+                                <label class="custom-control-label" for="customCheck1"><h5>Phòng 4 Người</h5></label>
                             </div>
                             <div class="custom-control custom-checkbox" style="margin-left: 30px;">
                                 <input type="radio" class="custom-control-input" id="customCheck2" value="6" name="sno"  >
@@ -49,18 +49,18 @@ if (isset($_SESSION['sv_login'])) {
                         </div>
                         <div class="form-row">
                             <div class="form-group col-sm-12">
-                                <label for="masv">Lý do muốn chuyển</label>
+                                <label for="masv">Lý do chuyển phòng</label>
                                 <textarea class="form-control" style="min-height: 110px;" name="lydo" required></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputAddress2"><span style="color: red;font-size: 20px;">*</span></label>
+                            <label for="inputAddress2"><span style="color: red;font-size: 20px;"></span></label>
                             <label></label>
                         </div>
                         <hr>
                         <div class="form-group">
                             <table class="table text-center badge-light">
-                                <caption>thông tin giá phòng</caption>
+                                <caption></caption>
                                 <thead class="badge-info">
                                 <tr>
                                     <th>#</th><th>Học Kỳ</th><th>Phòng 4 Người </th><th>Phòng 6 Người </th><th>Phòng 8 Người </th>
@@ -68,10 +68,10 @@ if (isset($_SESSION['sv_login'])) {
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1 </td><td>1 & 2</td><td>1,250,000đ</td><td>800,000đ</td><td>600,000đ</td>
+                                    <td>1 </td><td>Kỳ 1 & Kỳ 2</td><td>1,250,000đ</td><td>800,000đ</td><td>600,000đ</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td><td>hè</td><td></td><td></td><td>365,000đ</td>
+                                    <td>2</td><td>Hè</td><td></td><td></td><td>365,000đ</td>
                                 </tr>
                                 </tbody>
                             </table>

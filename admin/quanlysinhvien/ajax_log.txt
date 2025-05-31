@@ -11,3 +11,16 @@
     [action] => Thêm
 )
 
+2025-05-31 14:55:57 - POST: Array
+(
+    [masv] => 20042005
+    [ten] => Nguyễn Minh Nhật
+    [ns] => 2004-05-06
+    [gt] => Nam
+    [dc] => Điện Biên
+    [sdt] => 14587421
+    [mk] => 123456
+    [email] => 
+    [action] => Thêm
+)
+

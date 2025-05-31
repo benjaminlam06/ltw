@@ -10,7 +10,7 @@ else {
     include_once('include/header.php'); ?>
     <div class="container-fluid">
         <div class=" row">
-            <?php  			include_once('include/navbar.php');
+            <?php include_once('include/navbar.php');
             include_once('include/controller.php'); ?>
         </div>
     </div>
@@ -27,10 +27,10 @@ if (isset($_GET['thongbao'])) {
             echo '<script>alert("Xóa Thành công .")</script>';
             break;
         case 'sua':
-            echo '<script>alert("Cập Nhập Thành công .")</script>';
+            echo '<script>alert("Cập Nhật Thành công .")</script>';
             break;
         case 'loi':
-            echo '<script>alert("Cập Nhập Thành công .")</script>';
+            echo '<script>alert("Cập Nhật Thành công .")</script>';
             break;
         default:
             # code...

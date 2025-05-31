@@ -10,13 +10,13 @@
 				     echo '<script>alert("Lỗi!!!")</script>';
 					break;	
 				case 'ok1':
-				     echo '<script>alert("Đăng ký thành công. Nhân viên sẽ thông báo sau!!!")</script>';
+				     echo '<script>alert("Đăng ký thành công. Chờ duyệt")</script>';
 					break;
 				case 'ok2':
-				     echo '<script>alert("Đăng ký trả phòng thành công. Nhân viên sẽ kiểm tra và thông báo sau!!!")</script>';
+				     echo '<script>alert("Đăng ký trả phòng thành công. Chờ duyệt...")</script>';
 					break;	
 				case 'loi1':
-				     echo '<script>alert("Vui lòng trả phòng đang ở trước khi đăng ký... Nếu bạn đã đăng ký trước đó vui lòng đợi, nhân viên sẽ thông báo sau !!!")</script>';
+				     echo '<script>alert("Vui lòng trả phòng đang ở trước khi đăng ký...")</script>';
 					break;
 					
 				case 'loi2':

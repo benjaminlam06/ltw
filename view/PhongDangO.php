@@ -5,13 +5,10 @@ if (isset($_SESSION['sv_login'])) {
     $sql="select * from chitietdangky where MaSV=$masv and MaNV is NOT null and (NgayTraPhong is null or (NgayTraPhong is not null and TinhTrang='chưa duyệt'))";
     $rs=mysqli_query($conn,$sql);
     $row=mysqli_fetch_array($rs);
-        $mapp=$row['MaPhong'];
-        $sql12="select * from Phong where MaPhong ='$mapp'";
-        $rs12=mysqli_query($conn,$sql12);
-        $row12=mysqli_fetch_array($rs12);
-        $sql23="select MaSV from chitietdangky where MaPhong ='$mapp' and (NgayTraPhong is null or NgayTraPhong is NOT null and TinhTrang='chưa duyệt')";
-        $rs23=mysqli_query($conn,$sql23);
-
+    $mapp=$row['MaPhong'];
+    $sql12="select * from Phong where MaPhong ='$mapp'";
+    $rs12=mysqli_query($conn,$sql12);
+    $row12=mysqli_fetch_array($rs12);
     $sql23="select MaSV from chitietdangky where MaPhong ='$mapp' and (NgayTraPhong is null or NgayTraPhong is NOT null and TinhTrang='chưa duyệt')";
     $rs23=mysqli_query($conn,$sql23);
     ?>
@@ -46,7 +43,7 @@ if (isset($_SESSION['sv_login'])) {
 
                         <div class="form-group">
                             <hr> <h6>Sinh viên trong phòng </h6>
-                            <table class="table text-center badge- table-hover">
+                            <table class="table text-center badge-light table-hover">
                                 <thead class="badge-info">
                                 <tr>
                                     <th>#</th><th>Họ và tên</th><th>Số điện thoại</th>

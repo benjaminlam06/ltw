@@ -43,7 +43,7 @@ function getTotalEmptyBeds($MaKhu) {
 <div class="dashboard-container">
     <div class="row g-0">
         <!-- Sidebar -->
-        <div class="col-md-3 col-lg-2 sidebar">
+        <div class="col-md-3 col-lg-2 sidebar sticky-top">
             <nav class="sidebar-nav">
                 <div class="sidebar-header">
                     <h2 class="sidebar-title">

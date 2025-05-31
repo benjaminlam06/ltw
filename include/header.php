@@ -1,7 +1,7 @@
 <div style="font-family: Arial, sans-serif;">
     <div class="container-fluid" style="padding: 0;">
         <div class="row" style="background-color: #932120; margin: 0; padding: 15px 0;">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <img class="logo" src="" alt="" style="margin: 20px 0; max-height: 60px;">
             </div>
             <div class="col-md-4" style="display: flex; align-items: center; justify-content: center;">
@@ -12,7 +12,7 @@
                           text-transform: uppercase;
                           letter-spacing: 1px;
                           text-align: center;
-                          width: 100%;">KÝ TÚC XÁ PTIT
+                          width: 100%;"> KÝ TÚC XÁ PTIT
                 </h5>
             </div>
         </div>

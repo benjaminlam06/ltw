@@ -29,6 +29,7 @@
     </form>
 </table>
 
+
 <!-- Email field row -->
 <div class="row mb-2 mt-1">
     <div class="col-md-4 offset-md-4">
@@ -122,7 +123,6 @@ function searchStudent() {
             resultContainer.style.display = 'none';
         });
 }
-
 // Thêm sự kiện Enter cho ô tìm kiếm
 document.getElementById('searchKeyword').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
@@ -130,14 +130,12 @@ document.getElementById('searchKeyword').addEventListener('keypress', function(e
         searchStudent();
     }
 });
-
 // Thêm sự kiện reset form tìm kiếm
 document.getElementById('searchKeyword').addEventListener('input', function(e) {
     if (!this.value.trim()) {
         document.getElementById('searchResultContainer').style.display = 'none';
     }
 });
-
 // Liên kết form và field email khi submit
 document.getElementById('studentForm').addEventListener('submit', function(e) {
     const emailField = document.getElementById('email');
@@ -152,24 +150,19 @@ document.getElementById('studentForm').addEventListener('submit', function(e) {
         this.appendChild(hiddenEmail);
     }
 });
-
 // Kiểm tra mã sinh viên khi nhập
 let studentIdTimer;
 function checkStudentId(masv) {
     clearTimeout(studentIdTimer);
-
     // Đợi người dùng ngừng gõ 500ms
     studentIdTimer = setTimeout(() => {
         if (!masv) {
             document.getElementById('masv-error').textContent = '';
             return;
-        }
 
         // Hiển thị loading
         document.getElementById('masv-error').textContent = 'Đang kiểm tra...';
-
         console.log('Kiểm tra mã sinh viên:', masv);
-
         // Sử dụng đường dẫn đơn giản, bắt đầu từ thư mục gốc trang web
         fetch(`quanlysinhvien/check_masv.php?masv=${encodeURIComponent(masv)}`)
         .then(response => {
@@ -198,26 +191,22 @@ function checkStudentId(masv) {
         });
     }, 500);
 }
-
 // Hàm thêm sinh viên mới đơn giản hơn
 function addNewStudentSimple() {
     // Lấy form
     const form = document.getElementById('studentForm');
-
     // Kiểm tra validation
     if (!form.checkValidity()) {
         // Kích hoạt báo lỗi HTML5 trên form
         form.reportValidity();
         return false;
     }
-
     // Kiểm tra mã sinh viên hợp lệ
     const masvInput = document.getElementById('masv');
     if (masvInput.validity.customError) {
         showNotification('error', 'Mã sinh viên đã tồn tại');
         return false;
     }
-
     // Lấy dữ liệu từ form
     const masv = document.querySelector('input[name="masv"]').value;
     const ten = document.querySelector('input[name="ten"]').value;
@@ -227,40 +216,31 @@ function addNewStudentSimple() {
     const sdt = document.querySelector('input[name="sdt"]').value;
     const mk = document.querySelector('input[name="mk"]').value;
     const email = document.getElementById('email') ? document.getElementById('email').value : '';
-
     // Tạo object chứa dữ liệu
     const studentData = { masv, ten, ns, gt, dc, sdt, mk, email, action: 'Thêm' };
-
     console.log('Dữ liệu sinh viên:', studentData);
-
     // Hiển thị loading
     const submitBtn = document.getElementById('submitBtn');
     const originalText = submitBtn.innerHTML;
     submitBtn.disabled = true;
     submitBtn.innerHTML = 'Đang xử lý...';
-
     // Hiển thị thông báo đang xử lý
     showNotification('info', 'Đang thêm sinh viên mới...');
-
     // Sử dụng XMLHttpRequest thay vì fetch để tương thích tốt hơn
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'quanlysinhvien/xuly_ajax.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
     xhr.onload = function() {
         if (xhr.status === 200) {
             try {
                 console.log('Phản hồi từ server:', xhr.responseText);
                 const response = JSON.parse(xhr.responseText);
-
                 if (response.success) {
                     // Hiển thị thông báo thành công
                     showNotification('success', response.message || 'Thêm sinh viên thành công');
-
                     // Reset form
                     form.reset();
                     document.getElementById('masv-error').textContent = '';
-
                     // Nếu thành công và muốn reload trang
                     setTimeout(() => {
                         window.location.href = 'index.php?action=sinhvien&view=all&thongbao=them';
@@ -277,7 +257,6 @@ function addNewStudentSimple() {
             console.error('Lỗi HTTP:', xhr.status);
             showNotification('error', 'Lỗi kết nối đến server: ' + xhr.status);
         }
-
         // Khôi phục nút submit
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
@@ -289,20 +268,15 @@ function addNewStudentSimple() {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
     };
-
     // Chuyển đổi object thành chuỗi query string
     const formData = Object.keys(studentData)
         .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(studentData[key]))
         .join('&');
-
     console.log('Dữ liệu gửi đi:', formData);
-
     // Gửi request
     xhr.send(formData);
-
     return false;
 }
-
 // Hàm hiển thị thông báo
 function showNotification(type, message) {
     const notification = document.getElementById('notification');
@@ -313,9 +287,7 @@ function showNotification(type, message) {
     } else {
         notification.className = 'alert alert-danger';
     }
-
     notification.textContent = message;
-
     // Tự động ẩn thông báo sau 5 giây
     setTimeout(() => {
         notification.style.display = 'none';

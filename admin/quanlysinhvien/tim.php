@@ -4,13 +4,11 @@ include_once('../../config/database.php');
 if(isset($_GET['keyword'])) {
     $keyword = mysqli_real_escape_string($conn, $_GET['keyword']);
 
-    // Tìm kiếm theo mã sinh viên hoặc tên sinh viên, không giới hạn số lượng
+    //
     $sql = "SELECT * FROM sinhvien 
             WHERE MaSV LIKE '%$keyword%' 
             OR HoTen LIKE '%$keyword%'";
-
     $result = mysqli_query($conn, $sql);
-
     if(mysqli_num_rows($result) > 0) {
         $data = array();
         while($row = mysqli_fetch_assoc($result)) {

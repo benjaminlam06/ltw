@@ -1,7 +1,7 @@
 <?php	
 if(isset($_POST['dangkyphong'])){
 	$masv=$_POST["masv"];
-//check sinh viên đã đăng ký chưa.
+//check if the student has register
 	$sql="select MaSV from chitietdangky where MaSV=$masv   and ((NgayTraPhong is not null and TinhTrang='chưa duyệt') or (NgayTraPhong is null and (TinhTrang='đã duyệt'or TinhTrang='chưa duyệt')))";
 	$rs=mysqli_query($conn,$sql);
     $dem=mysqli_num_rows($rs);
@@ -9,7 +9,7 @@ if(isset($_POST['dangkyphong'])){
     if($dem ==0 ){	
     	$masv=$_POST["masv"]; 
 		$sno=$_POST['sno'];
-//check giới tính để tìm khu theo giới tính 
+//check gender to put in dorm building
 		$sql="select * from sinhvien where MaSV=$masv";
 	    $rs=mysqli_query($conn,$sql);
 	    $row=mysqli_fetch_array($rs); 
@@ -45,9 +45,7 @@ if(isset($_POST['dangkyphong'])){
 		    		header('location:../index.php?action=&tb=loi3&sn='.$sno);
 		    	}
 		    	else{header('location:../index.php?action=&tb=ok1');}
-	    	
 
-			
 	    }elseif ($row['GioiTinh']==='Nu') {
 //tìm khu theo giới tính Nữ
 	    	$sql1="select MaKhu from Khu where Sex='Nu'";

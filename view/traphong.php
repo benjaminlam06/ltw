@@ -14,12 +14,12 @@ if (isset($_SESSION['sv_login'])) {
                     <form class="col-md-12 m-auto" action="xuly/main.php?action=traphong" method="POST">
                         <div class="form-row">
                             <div class="form-group col-sm-4">
-                                <label for="masv">Mã sinh viên</label>
+                                <label for="masv">Mã Sinh Viên</label>
                                 <label class="form-control" > <?php echo $sv['MaSV']; ?></label>
                                 <input hidden name="masv" value="<?php echo $sv['MaSV'] ?>">
                             </div>
                             <div class="form-group col-sm-4">
-                                <label for="hoten">Họ và tên</label>
+                                <label for="hoten">Họ Tên</label>
                                 <label class="form-control" ><?php echo $sv['HoTen']; ?> </label>
                             </div>
                             <div class="form-group col-sm-4">
@@ -30,7 +30,7 @@ if (isset($_SESSION['sv_login'])) {
 
                         <div class="form-group">
 
-                            <label> <span style="color: red;font-size: 25px;">*</span>Lưu ý : Bạn sẽ không được nhận lại tiền dư khi trả phòng trước thời hạn. Nhân viên ký túc xá sẽ kiểm tra lại tài sản trước khi cho bạn trả phòng. Hệ thống sẽ gửi thông báo sau !</label>
+                            <label> <span style="color: red;font-size: 25px;"></span></label>
                         </div>
                         <hr>
                         <button type="submit" name="trap" class="btn btn-lg btn-danger btn-block text-uppercase ">Trả Phòng</button>

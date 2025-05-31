@@ -33,18 +33,8 @@ if(isset($_GET['action'])){
                 header('location:../index.php?action=sinhvien&view=all&thongbao=sua');
             }
             break;
-        case 'xoa':
-            $masv=$_GET['masv'];
-            $sql="delete from sinhvien where MaSV='$masv'";
-            $rs=mysqli_query($conn,$sql);
-            if($rs){
-
-                header('location:../index.php?action=sinhvien&view=all&thongbao=xoa');
-            }
-            break;
-
         default:
-            # code...
+            // nothing
             break;
     }
 }
