@@ -1,0 +1,13 @@
+2025-05-31 12:08:32 - POST: Array
+(
+    [masv] => 04112004
+    [ten] => Tran Minh Thu
+    [ns] => 2005-02-01
+    [gt] => Nu
+    [dc] => Lao Cai
+    [sdt] => 12357489
+    [mk] => 123456
+    [email] => thutran@gmail.com
+    [action] => Thêm
+)
+
