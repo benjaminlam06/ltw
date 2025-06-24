@@ -3,7 +3,6 @@
       <div class="col-sm-12  m-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
-
            <form class="col-md-12 m-auto" action="index.php?action=quanlydiennuoc&view=them&map=<?php echo $map ?>" method="POST">
               <div class="form-row">
                  <div class="form-group col-sm-4">

@@ -14,7 +14,7 @@
 		<div class="card col-6">
 			<table class="table">
 				<thead>
-					<tr class="badge-info text-center"><td colspan="2"><h3>Thông tin sinh viên đăng ký</h3> </td></tr>
+					<tr class="bg-danger text-white text-center text-center"><td colspan="2"><h3>Thông tin sinh viên đăng ký</h3> </td></tr>
 					<tr>
 						<th>Mã sinh viên</th><th> <?php echo $row['MaSV'] ?></th>
 					</tr>
@@ -40,7 +40,7 @@
 		<div class="card col-6">
 			<table class="table">
 				<thead>
-					<tr class="badge-info text-center"><td colspan="2"><h3>Thông tin Phòng</h3> </td></tr>
+					<tr class="bg-danger text-white text-center"><td colspan="2"><h3>Thông tin Phòng</h3> </td></tr>
 					<tr>
 						<th>Mã Phòng</th><th> <?php echo $row1['MaPhong'] ?></th>
 					</tr>

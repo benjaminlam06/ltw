@@ -4,7 +4,7 @@
 	
 ?>
 <table class="table table-hover m-auto text-center" style="font-size: 13px;">
-	<thead class="badge-info">
+	<thead class="bg-danger text-white">
 		<tr>
 			<th>Mã Đăng Ký</th> <th>Mã Sinh Viên</th><th>Mã Nhân Viên</th><th>Mã Phòng</th><th>Ngày Đăng Ký</th><th>Tình trạng</th><th>Chi Tiết</th>
 		</tr>

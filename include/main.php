@@ -36,16 +36,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.php?action=phongdango" class="nav-link">
-                            <i class="fas fa-bed me-2"></i>Xem phòng đang ở
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.php?action=xemthongbao" class="nav-link">
-                            <i class="fas fa-bell me-2"></i>Xem thông báo
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="index.php?action=logout" class="nav-link">
                             <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
                         </a>

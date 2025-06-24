@@ -1,13 +1,17 @@
-<?php 
-	include_once('../config/database.php');
-	if(isset($_GET['view'])){
-		$view=$_GET['view'];
-		switch ($view) {
-			case 'all':
-				?><h4>Quản Lý Sinh Viên  </h4><hr> <?php
-					include_once('quanlysinhvien/them.php');
-					include_once('quanlysinhvien/hoso.php');
-				break;
-		}
-	}
+<?php
+include_once('../config/database.php');
+if(isset($_GET['view'])){
+    $view=$_GET['view'];
+    switch ($view) {
+        case 'all':
+            ?><h4>Quản Lý Sinh Viên  </h4><hr> <?php
+            include_once('quanlysinhvien/them.php');
+            include_once('quanlysinhvien/hoso.php');
+            break;
+        default:
+            break;
+    }
+}
+
+
 ?>

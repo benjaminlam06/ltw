@@ -2,12 +2,10 @@
 $sql="select *from sinhvien";
 $rs=mysqli_query($conn,$sql);
 ?>
-
-
 <table class="table table-hover text-center ">
     <thead>
     <tr>
-        <th>Mã SV</th><th>Họ Tên</th><th>Ngày Sinh</th><th>Giới Tính</th><th>Địa Chỉ</th><th>SĐT</th><th>Email</th><th colspan="2">#</th>
+        <th>Mã SV</th><th>Họ Tên</th><th>Ngày Sinh</th><th>Giới Tính</th><th>Địa Chỉ</th><th>SĐT</th><th colspan="2">#</th>
     </tr>
     </thead>
     <tbody>
@@ -20,16 +18,12 @@ $rs=mysqli_query($conn,$sql);
                 <td><input  class="form-control form-control-sm" type="text" name="gt" value="<?php echo $row['GioiTinh'] ?>"></td>
                 <td><input  class="form-control form-control-sm" type="text" name="dc" value="<?php echo $row['DiaChi'] ?>"></td>
                 <td><input  class="form-control form-control-sm" type="text" name="sdt" value="<?php echo $row['SDT'] ?>"></td>
-                <td><input  class="form-control form-control-sm" type="email" name="email" value="<?php echo $row['Email'] ?>"></td>
                 <td><input  class="btn-sm btn-success btn" type="submit" name="action" value="Cập nhật"></td>
-                <td><a      href="quanlysinhvien/xoa.php?masv=<?php echo $row['MaSV']; ?>"
-                            class="btn btn-danger btn-sm"
-                            onclick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này không?');">Xóa
-                </td>
+                <td><input  class="btn-sm btn-danger btn" type="submit" name="action" value="Xóa"></td>
             </tr>
         </form>
+    <?php	} ?>
 
-
-    <?php	}?>
     </tbody>
 </table>
+

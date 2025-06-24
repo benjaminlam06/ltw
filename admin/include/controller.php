@@ -3,37 +3,35 @@
       if(isset($_GET['action'])){
           $action=$_GET['action'];
           switch ($action) {
-                    case 'logout':  
-                        header('location:logout.php');
-                    case 'quanlydangkyphong':
-                        include('quanlydangkyphong/main.php');
-                        break;
-                    case 'quanlychuyenphong':
-                        include('quanlychuyenphong/main.php');
-                        break;  
-                    case 'quanlydiennuoc':
-                        include('quanlydiennuoc/main.php');
-                        break;
-                    case 'quanlyphong':
-                        include('quanlyphong/main.php');
-                        break; 
-                     case 'quanlytraphong':
-                        include('quanlytraphong/main.php');
-                        break;  
-                    case 'khu':
-                        include('quanlykhu/main.php');
-                        break;
-                    case 'nhanvien':
-                        include('quanlynhanvien/main.php');
-                        break;
-                    case 'sinhvien':
-                        include('quanlysinhvien/main.php');
-                        break;                           
-                  
-                    default:
-                         
-                        break;
-                }
+              case 'logout':
+                  header('location:logout.php');
+              case 'quanlydangkyphong':
+                  include('quanlydangkyphong/main.php');
+                  break;
+              case 'quanlychuyenphong':
+                  include('quanlychuyenphong/main.php');
+                  break;
+              case 'quanlydiennuoc':
+                  include('quanlydiennuoc/main.php');
+                  break;
+              case 'quanlyphong':
+                  include('quanlyphong/main.php');
+                  break;
+              case 'quanlytraphong':
+                  include('quanlytraphong/main.php');
+                  break;
+              case 'khu':
+                  include('quanlykhu/main.php');
+                  break;
+              case 'nhanvien':
+                  include('quanlynhanvien/main.php');
+                  break;
+              case 'sinhvien':
+                  include('quanlysinhvien/main.php');
+                  break;
+              default:
+                  break;
+          }
       }
       else {
           include_once('a.php');
@@ -95,7 +93,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="card mb-4">
-                            <img src="photos/b5.jpg" class="card-img-top" alt="KTX C" style="height: 200px; object-fit: cover;">
+                            <img src="photos/dorm.jpg" class="card-img-top" alt="KTX C" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">KTX C</h5>
                                 <p class="card-text">Còn <strong><?php echo getTotalEmptyBeds('C'); ?></strong>  chỗ trống

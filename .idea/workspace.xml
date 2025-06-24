@@ -6,28 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="b82b2e61-9bc4-47dc-9d92-59aa2ad8d478" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/a.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/a.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/include/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/include/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlychuyenphong/chitietdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlychuyenphong/chitietdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlychuyenphong/danhsachdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlychuyenphong/danhsachdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlydangkyphong/chitietdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlydangkyphong/chitietdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlydangkyphong/danhsachall.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlydangkyphong/danhsachall.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlydangkyphong/danhsachdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlydangkyphong/danhsachdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlydiennuoc/danhsachdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlydiennuoc/danhsachdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlydiennuoc/them.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlydiennuoc/them.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/hoso.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/hoso.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/them.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/them.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/tim.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/xoa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/xuly.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/xuly.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlytraphong/chitietdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlytraphong/chitietdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlytraphong/danhsachdangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlytraphong/danhsachdangky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/quanlytraphong/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlytraphong/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/t.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t.php" beforeDir="false" afterPath="$PROJECT_DIR$/t.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/PhongDangO.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/PhongDangO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/capnhatthongtin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/capnhatthongtin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dangkychuyenphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangkychuyenphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/dangkyphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangkyphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/traphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/traphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/capnhatthongtin.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/capnhatthongtin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/dangkychuyenphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/dangkychuyenphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/dangkyphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/dangkyphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/traphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/traphong.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

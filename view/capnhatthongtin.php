@@ -68,10 +68,6 @@
    else{
     header('location:index.php?action=login');
    }
-
-//định dạng ngày
-//      $date=date_create($ns);
-//     echo date_format($date,"d/m/Y ");
     ?>
 
 

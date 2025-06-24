@@ -12,13 +12,10 @@
 					include_once('quanlytraphong/chitietdangky.php');
 				break;	
 			default:
-					
 				break;
 		}
 	}
 	else{
 		include_once('dondathang/dondathang.php');
 	}
-	
-
 ?>

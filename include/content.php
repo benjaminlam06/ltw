@@ -17,12 +17,6 @@
             case 'traphong':
                 include_once('view/traphong.php');
                 break;
-            case 'phongdango':
-                include_once('view/phongdango.php');
-                break;
-            case 'xemthongbao':
-                include_once('view/thongbao.php');
-                break;
             case 'logout':
                 include_once('view/logout.php');
                 break;

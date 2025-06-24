@@ -59,55 +59,6 @@
                 </div>
             </div>
         </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#hoadon" aria-expanded="true" aria-controls="hoadon">
-                <i class="fas fa-yen-sign"></i>
-                <span>Quản Lý Tiền Điện Nước</span>
-            </a>
-            <div id="hoadon" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="index.php?action=quanlydiennuoc&view=quanlydiennuoc">Thêm tiền điện nước</a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#phong" aria-expanded="true" aria-controls="phong">
-                <i class="fas fa-poll-h"></i>
-                <span>Quản Lý  Phòng</span>
-            </a>
-            <div id="phong" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-
-                    <a class="collapse-item" href="index.php?action=quanlyphong&view=quanlyphong">Phòng</a>
-
-                </div>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#khu" aria-expanded="true" aria-controls="khu">
-                <i class="fas fa-poll-h"></i>
-                <span>Quản Lý  Khu</span>
-            </a>
-            <div id="khu" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-
-                    <a class="collapse-item" href="index.php?action=khu&view=khu">Khu</a>
-
-                </div>
-            </div>
-        </li>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#nv" aria-expanded="true" aria-controls="nv">
-                <i class="fas fa-poll-h"></i>
-                <span>Quản Lý Nhân Viên</span>
-            </a>
-            <div id="nv" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="index.php?action=nhanvien&view=all">Tất cả nhân viên</a>
-                </div>
-            </div>
         </li>
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#sv" aria-expanded="true" aria-controls="sv">
@@ -121,6 +72,8 @@
             </div>
         </li>
     </ul>
+
+
     <style>
         #accordionSidebar {
             background-color: #c9000a !important;
