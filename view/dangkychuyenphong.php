@@ -13,8 +13,7 @@ if (isset($_SESSION['sv_login'])) {
         <div class="col-sm-12  mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Đăng Ký Phòng KÝ TÚC XÁ</h5><hr>
-
+                    <h5 class="card-title text-center">Đăng ký chuyển phòng</h5><hr>
                     <form class="col-md-12 m-auto" action="xuly/main.php?action=dangkychuyenphong" method="POST">
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -61,7 +60,7 @@ if (isset($_SESSION['sv_login'])) {
                         <div class="form-group">
                             <table class="table text-center badge-light">
                                 <caption></caption>
-                                <thead class="badge-info">
+                                <thead class="bg-danger text-white">
                                 <tr>
                                     <th>#</th><th>Học Kỳ</th><th>Phòng 4 Người </th><th>Phòng 6 Người </th><th>Phòng 8 Người </th>
                                 </tr>
@@ -71,7 +70,7 @@ if (isset($_SESSION['sv_login'])) {
                                     <td>1 </td><td>Kỳ 1 & Kỳ 2</td><td>1,250,000đ</td><td>800,000đ</td><td>600,000đ</td>
                                 </tr>
                                 <tr>
-                                    <td>2</td><td>Hè</td><td></td><td></td><td>365,000đ</td>
+                                    <td>2</td><td>Kỳ Hè</td><td></td><td></td><td>365,000đ</td>
                                 </tr>
                                 </tbody>
                             </table>

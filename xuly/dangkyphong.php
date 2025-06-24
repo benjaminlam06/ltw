@@ -1,12 +1,13 @@
 <?php	
 if(isset($_POST['dangkyphong'])){
 	$masv=$_POST["masv"];
+
 //check if the student has register
-	$sql="select MaSV from chitietdangky where MaSV=$masv   and ((NgayTraPhong is not null and TinhTrang='chưa duyệt') or (NgayTraPhong is null and (TinhTrang='đã duyệt'or TinhTrang='chưa duyệt')))";
+	$sql="select MaSV from chitietdangky where MaSV=$masv and ((NgayTraPhong is not null and TinhTrang='chưa duyệt') 
+        or (NgayTraPhong is null and (TinhTrang='đã duyệt'or TinhTrang='chưa duyệt')))";
 	$rs=mysqli_query($conn,$sql);
     $dem=mysqli_num_rows($rs);
-
-    if($dem ==0 ){	
+    if($dem == 0 ){
     	$masv=$_POST["masv"]; 
 		$sno=$_POST['sno'];
 //check gender to put in dorm building
@@ -19,15 +20,16 @@ if(isset($_POST['dangkyphong'])){
 	    	$rs1=mysqli_query($conn,$sql1); $loi=0;
 	    	while ($row1=mysqli_fetch_array($rs1)) {
 	    		$makhu=$row1['MaKhu'];
-      			echo $makhu;
+      			// echo $makhu;
       			// Tìm phòng cho sinh viên   	
-				$sql2="SELECT  MaPhong  from Phong where MaKhu = '$makhu' and SoNguoiToiDa = $sno and (SoNguoiHienTai<SoNguoiToiDa ) ORDER BY SoNguoiHienTai DESC LIMIT 1";
+				$sql2="SELECT  MaPhong  from Phong where MaKhu = '$makhu' and SoNguoiToiDa = $sno 
+                        and (SoNguoiHienTai<SoNguoiToiDa ) ORDER BY SoNguoiHienTai DESC LIMIT 1";
 				$rs2=mysqli_query($conn,$sql2);
 		    	$row2=mysqli_fetch_array($rs2);
 		    	$dem2=mysqli_num_rows($rs2);
 		    	if($dem2 >= 1){
 		    		$map=$row2['MaPhong'];
-			    	echo $map;
+			    	// echo $map;
 // thêm sinh viên vào phòng
 			    	$sql3="INSERT INTO `chitietdangky`(`MaSV`, `MaPhong`, `TinhTrang`) VALUES ($masv,'$map',N'chưa duyệt')";
 			    	$rs3=mysqli_query($conn,$sql3);
@@ -35,16 +37,14 @@ if(isset($_POST['dangkyphong'])){
 						$sql4="UPDATE  `Phong` set `SoNguoiHienTai`=(`SoNguoiHienTai`+1) where MaPhong='$map'";
 			    		$rs4=mysqli_query($conn,$sql4);
 			    		break;
-			    		
 			    	}
 			    	else{$loi=1;}
 		    	}
-		    	
 	    	}
 	    	if($loi==1){
-		    		header('location:../index.php?action=&tb=loi3&sn='.$sno);
+		    		header('location:../index.php?action=&tb=loi3'.$sno);
 		    	}
-		    	else{header('location:../index.php?action=&tb=ok1');}
+            else{header('location:../index.php?action=&tb=ok1');}
 
 	    }elseif ($row['GioiTinh']==='Nu') {
 //tìm khu theo giới tính Nữ
@@ -68,11 +68,9 @@ if(isset($_POST['dangkyphong'])){
 						$sql4="UPDATE  `Phong` set `SoNguoiHienTai`=(`SoNguoiHienTai`+1) where MaPhong='$map'";
 			    		$rs4=mysqli_query($conn,$sql4);
 			    		break;
-			    		
 			    	}
 			    	else{$loi=1;}
 		    	}
-		    	
 	    	}
 	    	if($loi==1){
 		    		header('location:../index.php?action=&tb=loi3&sn='.$sno);
@@ -80,7 +78,6 @@ if(isset($_POST['dangkyphong'])){
 		    	else{header('location:../index.php?action=&tb=ok1');}
 	    	
 	    }
-
     }   
     else {
 	header('location:../index.php?action=&tb=loi1');

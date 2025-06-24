@@ -23,6 +23,4 @@ if(isset($_POST['trap'])){
 }else {
     header('location:../index.php?action=&tb=loi2');
 }
-
-
 ?>

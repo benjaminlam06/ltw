@@ -1,4 +1,4 @@
-<?php	
+<?php
  	session_start();
 	ob_start();
 	include_once('../config/database.php');
@@ -18,7 +18,6 @@
 			    include_once('traphong.php');
 				break;
 			default:
-				
 				break;
 		}
 	}

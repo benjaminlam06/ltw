@@ -10,7 +10,6 @@
 </head>
 <body>
 <div class="m-auto">
-
 </div>
 </body>
 </html>

@@ -1,57 +1,4 @@
 <div class="col-2" style="margin-left: -25px; margin-top: -20px;margin-right: 10px;">
-    <!-- Thêm style cho icon collapse và màu đỏ đậm -->
-    <style>
-        #accordionSidebar {
-            background-color: #c9000a !important;
-            background-image: none !important;
-        }
-
-        /* Style cho icon collapse */
-        .nav-link[data-toggle="collapse"]::after {
-            content: '\f105'; /* Icon mũi tên từ Font Awesome */
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            float: right;
-            color: rgba(255,255,255,0.7);
-            margin-left: 10px;
-            transition: all 0.2s ease;
-        }
-
-        /* Xoay icon khi menu được mở */
-        .nav-link[aria-expanded="true"]::after {
-            transform: rotate(90deg);
-            color: #fff;
-        }
-
-        /* Style cho các menu items */
-        .nav-item .nav-link {
-            padding: 0.7rem 1rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-item .nav-link:hover {
-            background: rgba(255,255,255,0.1);
-        }
-
-        /* Style cho tiêu đề bảng */
-        .badge-info {
-            background-color: #000080 !important;
-            color: white !important;
-        }
-
-        /* Style cho nút trong bảng */
-        .table .btn-priman {
-            background-color: #2E5A88;
-            border-color: #2E5A88;
-        }
-
-        .table .btn-danger {
-            background-color: #dc3545;
-            border-color: #dc3545;
-        }
-    </style>
-
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
             <div class="sidebar-brand-icon">
@@ -154,7 +101,7 @@
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#nv" aria-expanded="true" aria-controls="nv">
                 <i class="fas fa-poll-h"></i>
-                <span>Quản Lý  Nhân Viên</span>
+                <span>Quản Lý Nhân Viên</span>
             </a>
             <div id="nv" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
@@ -174,33 +121,43 @@
             </div>
         </li>
     </ul>
-
-    <!-- Script để xử lý icon collapse -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Đánh dấu menu đang active dựa vào URL hiện tại
-        const currentUrl = window.location.href;
-        const menuItems = document.querySelectorAll('.collapse-item');
-
-        menuItems.forEach(function(item) {
-            if(currentUrl.includes(item.getAttribute('href'))) {
-                // Highlight menu item
-                item.classList.add('active');
-                item.style.fontWeight = 'bold';
-                item.style.color = '#c9000a';
-
-                // Mở rộng parent collapse
-                const parent = item.closest('.collapse');
-                if(parent) {
-                    parent.classList.add('show');
-                    const trigger = document.querySelector('[data-target="#' + parent.id + '"]');
-                    if(trigger) {
-                        trigger.setAttribute('aria-expanded', 'true');
-                        trigger.classList.remove('collapsed');
-                    }
-                }
-            }
-        });
-    });
-    </script>
+    <style>
+        #accordionSidebar {
+            background-color: #c9000a !important;
+            background-image: none !important;
+        }
+        .nav-link[data-toggle="collapse"]::after {
+            content: '\f105';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            float: right;
+            color: rgba(255,255,255,0.7);
+            margin-left: 10px;
+            transition: all 0.2s ease;
+        }
+        .nav-link[aria-expanded="true"]::after {
+            transform: rotate(90deg);
+            color: #fff;
+        }
+        .nav-item .nav-link {
+            padding: 0.7rem 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .nav-item .nav-link:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .badge-info {
+            background-color: #000080 !important;
+            color: white !important;
+        }
+        .table .btn-priman {
+            background-color: #2E5A88;
+            border-color: #2E5A88;
+        }
+        .table .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+    </style>
 </div>

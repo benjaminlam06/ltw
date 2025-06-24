@@ -1,5 +1,36 @@
-
-<?php 
+<?php
+    if(isset($_GET['action'])){
+        $action = $_GET['action'];
+        switch ($action) {
+            case 'login':
+                include_once('view/login.php');
+                break;
+            case 'capnhapthongtin':
+                include_once('view/capnhatthongtin.php');
+                break;
+            case 'dkphong':
+                include_once('view/dangkyphong.php');
+                break;
+            case 'chuyenphong':
+                include_once('view/dangkychuyenphong.php');
+                break;
+            case 'traphong':
+                include_once('view/traphong.php');
+                break;
+            case 'phongdango':
+                include_once('view/phongdango.php');
+                break;
+            case 'xemthongbao':
+                include_once('view/thongbao.php');
+                break;
+            case 'logout':
+                include_once('view/logout.php');
+                break;
+            default:
+                include_once('view/main.php');
+                break;
+        }
+    }
 	if(isset($_GET['tb'])){
 			$tb = $_GET['tb'];
 			switch ($tb) {
@@ -18,7 +49,6 @@
 				case 'loi1':
 				     echo '<script>alert("Vui lòng trả phòng đang ở trước khi đăng ký...")</script>';
 					break;
-					
 				case 'loi2':
 				     echo '<script>alert("Lỗi!!!")</script>';
 					break;
@@ -31,41 +61,8 @@
 				break;
 		}
 	}
-	if(isset($_GET['action'])){
-		$action = $_GET['action'];
-		switch ($action) {
-			case 'login':
-			    include_once('view/login.php');
-				break;
-			case 'capnhapthongtin':
-			    include_once('view/capnhatthongtin.php');
-				break;
-			case 'dkphong':
-			    include_once('view/dangkyphong.php');
-				break;
-			case 'chuyenphong':
-			    include_once('view/dangkychuyenphong.php');
-				break;
-			case 'traphong':
-			    include_once('view/traphong.php');
-				break;
-			case 'phongdango':
-			    include_once('view/phongdango.php');
-				break;
-			case 'xemthongbao':
-			    include_once('view/thongbao.php');
-				break;
-			case 'logout':
-			    include_once('view/logout.php');
-				break;
-			default:
-				 include_once('view/main.php');
-				break;
-		}
-	}
 	else
 	{
 		include_once('view/main.php');
 	}
-	
 ?>

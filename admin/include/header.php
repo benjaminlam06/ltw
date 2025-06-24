@@ -5,7 +5,6 @@
     <link href="/KTX-SPKT/font/Font Awesome/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="template/cssfont.css" rel="stylesheet">
     <link href="template/css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 <body >
 <div id="content-wrapper" class="d-flex flex-column">
@@ -30,12 +29,9 @@
                         </a>
                     </div>
                 </li>
-
             </ul>
         </nav>
     </div>
 </div>
-
-
 </body>
 </html>

@@ -16,8 +16,7 @@ if (isset($_SESSION['sv_login'])) {
         <div class="col-sm-12  mx-auto">
             <div class="card card-signin my-5">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Thông tin phòng đang ở</h5><hr>
-
+                    <h5 class="card-title text-center">Phòng đang ở</h5><hr>
                     <form class="col-md-12 m-auto" action="" method="">
                         <div class="form-row m-auto">
                             <div class="form-group col-sm-2"></div>
@@ -44,7 +43,7 @@ if (isset($_SESSION['sv_login'])) {
                         <div class="form-group">
                             <hr> <h6>Sinh viên trong phòng </h6>
                             <table class="table text-center badge-light table-hover">
-                                <thead class="badge-info">
+                                <thead class="bg-danger text-white">
                                 <tr>
                                     <th>#</th><th>Họ và tên</th><th>Số điện thoại</th>
                                 </tr>
@@ -69,19 +68,17 @@ if (isset($_SESSION['sv_login'])) {
                         </div><hr><br>
 
                         <div class="form-group">
-                            <hr class="badge-danger"> <h6>Tiền điện nước của phòng </h6>
+                            <hr class="bg-danger text-white"> <h6>Tiền điện nước của phòng </h6>
                             <table class="table text-center badge-light table-hover">
-                                <thead class="badge-info">
+                                <thead class="bg-danger text-white">
                                 <tr>
                                     <th>Tháng</th><th>Tiền Điện</th><th>Tiền Nước</th><th>Tổng Tiền</th><th>Tình Trạng</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
                                 <?php $sql123="select * from hoadondiennuoc where MaPhong ='$mapp'";
                                 $rs123=mysqli_query($conn,$sql123);
                                 while ( $row123=mysqli_fetch_array($rs123)) {
-
                                     ?>
                                     <tr >
                                         <td><?php echo $row123['Thang']; ?> </td><td> <?php echo number_format($row123['TienDien']).' đ' ?> </td><td><?php echo number_format($row123['TienNuoc']).' đ' ?></td>
@@ -89,9 +86,7 @@ if (isset($_SESSION['sv_login'])) {
                                         <td><?php if($row123['TinhTrang']==='chưa thu'){echo '<span class="text-danger"> Chưa Nộp</span>';}
                                             else{ echo 'Đã Nộp';} ?></td>
                                     </tr>
-
                                 <?php   } ?>
-
                                 </tbody>
                             </table>
                         </div><hr>

@@ -5,13 +5,12 @@ if (isset($_SESSION['sv_login'])) {
     $sql="select * from sinhvien where MaSV=$masv";
     $rs=mysqli_query($conn,$sql);
     $row=mysqli_fetch_array($rs);
-//?>
+?>
     <div class="cart">
       <div class="col-sm-12  mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
           <h5 class="card-title text-center">Đăng Ký Phòng KÝ TÚC XÁ</h5><hr>
-
            <form class="col-md-12 m-auto" action="xuly/main.php?action=dangkyphong" method="POST">
               <div class="form-row">
                  <div class="form-group col-sm-6">
@@ -46,18 +45,18 @@ if (isset($_SESSION['sv_login'])) {
               <hr>
               <div class="form-group">
                 <table class="table text-center badge-light">
-                  <caption>thông tin giá phòng</caption>
-                  <thead class="badge-info">
+                  <caption>Giá phòng</caption>
+                  <thead class="bg-danger text-white">
                     <tr>
                       <th>#</th><th>Học Kỳ</th><th>Phòng 4 Người </th><th>Phòng 6 Người </th><th>Phòng 8 Người </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                       <td>1 </td><td>1 & 2</td><td>1,250,000đ</td><td>800,000đ</td><td>600,000đ</td>
+                       <td>1 </td><td>Kỳ 1 & Kỳ 2</td><td>1,250,000đ</td><td>800,000đ</td><td>600,000đ</td>
                     </tr>
                     <tr>
-                       <td>2</td><td>hè</td><td></td><td></td><td>365,000đ</td>
+                       <td>2</td><td>Kỳ Hè</td><td></td><td></td><td>365,000đ</td>
                     </tr>
                   </tbody>
                 </table>

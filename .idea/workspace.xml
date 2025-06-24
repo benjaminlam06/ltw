@@ -5,23 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82b2e61-9bc4-47dc-9d92-59aa2ad8d478" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/a.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/include/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/include/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/ajax_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/ajax_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/them.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/them.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/tim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/tim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/xoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/xoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/xuly.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/xuly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/quanlysinhvien/xuly_ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/quanlysinhvien/xuly_ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t.php" beforeDir="false" afterPath="$PROJECT_DIR$/t.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/PhongDangO.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/PhongDangO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/capnhatthongtin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/capnhatthongtin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/dangkychuyenphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangkychuyenphong.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/dangkyphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/dangkyphong.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/traphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/traphong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuly/capnhapthongtin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuly/capnhatthongtin.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/capnhatthongtin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuly/dangkychuyenphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/dangkychuyenphong.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuly/dangkyphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/dangkyphong.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuly/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuly/traphong.php" beforeDir="false" afterPath="$PROJECT_DIR$/xuly/traphong.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fix" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../php/php.exe" />
@@ -51,24 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/KTX",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/KTX&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\KTX\view" />
@@ -83,6 +94,9 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="PHP" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b82b2e61-9bc4-47dc-9d92-59aa2ad8d478" name="Changes" comment="" />
@@ -94,6 +108,11 @@
       <workItem from="1748613661244" duration="25563000" />
       <workItem from="1748645506271" duration="1510000" />
       <workItem from="1748648249510" duration="27374000" />
+      <workItem from="1749635452696" duration="5000" />
+      <workItem from="1750233545427" duration="27000" />
+      <workItem from="1750692651834" duration="696000" />
+      <workItem from="1750751108491" duration="807000" />
+      <workItem from="1750775820244" duration="16913000" />
     </task>
     <servers />
   </component>

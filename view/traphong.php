@@ -27,9 +27,7 @@ if (isset($_SESSION['sv_login'])) {
                                 <label class="form-control"><?php echo $row2['MaPhong']; ?></label>
                             </div>
                         </div>
-
                         <div class="form-group">
-
                             <label> <span style="color: red;font-size: 25px;"></span></label>
                         </div>
                         <hr>

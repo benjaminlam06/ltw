@@ -1,11 +1,10 @@
   <?php 
     if (isset($_SESSION['sv_login'])) {
-       $sv=$_SESSION['sv_login'];
+        $sv=$_SESSION['sv_login'];
     $masv=$sv['MaSV'];
     $sql="select * from sinhvien where MaSV=$masv";
     $rs=mysqli_query($conn,$sql);
     $row=mysqli_fetch_array($rs);
-    
   ?>
     <div class="cart">
       <div class="col-sm-10  mx-auto">
@@ -64,13 +63,12 @@
         </div>
       </div>
     </div>
-    <?php 
-      
-    
+    <?php
     }
    else{
     header('location:index.php?action=login');
    }
+
 //định dạng ngày
 //      $date=date_create($ns);
 //     echo date_format($date,"d/m/Y ");

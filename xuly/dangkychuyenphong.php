@@ -3,7 +3,8 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 $date=getdate(); $ngay=$date['year']."-".$date['mon']."-".($date['mday']);
 if(isset($_POST['dangkychuyenphong'])){
     $masv=$_POST["masv"];
-    $sql1="select MaSV,MaDK,MaPhong from chitietdangky where MaSV=$masv and (MaNV is not null and NgayDangKy is not null and TinhTrang='đã duyệt' and NgayTraPhong is null)";
+    $sql1="select MaSV,MaDK,MaPhong from chitietdangky where MaSV=$masv 
+            and (MaNV is not null and NgayDangKy is not null and TinhTrang='đã duyệt' and NgayTraPhong is null)";
     $rs1=mysqli_query($conn,$sql1);
     $row=mysqli_fetch_array($rs1);
     $madk=$row['MaDK'];
@@ -31,7 +32,6 @@ if(isset($_POST['dangkychuyenphong'])){
             $sql2="SELECT  MaPhong  from Phong where MaKhu = '$makhu' and MaPhong !='$pdo' and SoNguoiToiDa = $sno and (SoNguoiHienTai<SoNguoiToiDa ) ORDER BY SoNguoiHienTai DESC LIMIT 1";
             $rs2=mysqli_query($conn,$sql2);
             $row2=mysqli_fetch_array($rs2);
-
             $map=$row2['MaPhong'];
 // thêm sinh viên vào phòng và update số người trong phòng
             $sql3="UPDATE chitietchuyenphong set MaPhongO='$map1', MaPhongChuyen='$map',Lydo='$lydo', TinhTrang=N'chưa duyệt', NgayDangKy='$ngay', LanChuyen=(LanChuyen+1) where MaDK='$madk'";
